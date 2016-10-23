@@ -49,6 +49,6 @@ var getUnprocessedEvents = function(){
 };
 
 //Initialze the schedule
-schedule.scheduleJob('0 * * * * *', sendEvent);
+schedule.scheduleJob('0 0 * * * *', sendEvent);
 
 console.log('Schedule task to retry to send the event');
